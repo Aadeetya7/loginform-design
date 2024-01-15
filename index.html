@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login Form</title>
+</head>
+
+<body>
+
+    <button class="loginbutton" onclick="showmodal()">Click</button>
+    <section class="box">
+        <container class="box-design">
+            <div class="heading">
+            <h4>Sign In</h4>
+        </div>
+        <section class="box-inside">
+            <form action="">
+                    <div class="box-container">
+                        <input type="text" placeholder="Your Name">
+                    </div>
+                    <div class="box-container">
+                        <div class="field2">
+                            <input class="cont" type="text" placeholder="Your Contact Detail">
+                            <select class="gender" name="" id="" style="opacity: 0.7;">
+                                <option value="" >Male</option>
+                                <option value="">Female</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="box-container">
+                        <input type="email" placeholder="Your Email id">
+                    </div>
+                    <div class="box-container">
+                        <input type="text" placeholder="State">
+                    </div>
+                    <div class="box-container">
+                        <input type="text" placeholder="City">
+                    </div>
+                </form>
+                
+            <div class="text-link">
+                <label for="">
+                    <input type="radio" name="" id="">I AGREE <a href="#">TERMS & CONDITIONS.</a>
+                </label>
+            </div>
+            <div class="save-button">
+                <button type="submit">Save</button>
+            </div>
+        </section>
+        </container>
+    </section>
+</body>
+<script>
+    function showmodal(){
+        document.querySelector('.box-design').classList.add('showbox-design');
+    }
+
+</script>
+
+</html>
