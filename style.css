@@ -1,112 +1,122 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: grey;
     color: black;
 }
 
-.box{
-      max-width: 40%;
-      background-color: white;
-      margin: auto;
-      margin-top: 5rem;
+.box {
+    max-width: 30%;
+    background-color: white;
+    margin: auto;
+    margin-top: 5rem;
 }
 
 
-.heading{
+.heading {
     display: flex;
     justify-content: center;
+    margin-right: 8%;
+
 }
 
-.heading h4{
+.heading h4 {
     background: purple;
-   color: white;
-   padding: 10px;
+    color: white;
+    padding: 10px;
+   
 }
 
-.box-design{
+.box-design {
     background-color: white;
     top: -60%;
     position: absolute;
     transition: 3s;
+    width: 35%;
+    height: 60%;
 }
 
-.showbox-design{
+.showbox-design {
     top: 20%;
     position: absolute;
 }
 
 
-.box-inside{
-     margin-inline: 30px;
-     margin-top: 30px;
-     margin-bottom: 10px;
-     gap: 10px;
-     display: flex;
-     flex-direction: column;   
+.box-inside {
+    margin-inline: 30px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 90%;
 }
 
-.box-container input{
+.box-container input {
     width: 100%;
     border: none;
     border-bottom: 1px solid black;
 }
 
-input[type="radio"]{
+input[type="radio"] {
     margin-right: 5px;
 }
 
-input,select{
+input,
+select {
     padding-bottom: 7px;
     padding-top: 10px;
 }
 
 
 
-.field2{
+.field2 {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
 }
-.field2 .cont{
+
+.field2 .cont {
     width: 49%;
     border: none;
     border-bottom: 1px solid black;
 }
 
-.field2 .gender{
+.field2 .gender {
     width: 38%;
     border: none;
     border-bottom: 1px solid black;
     padding-bottom: 10px;
 }
 
-.text-link{
+.text-link {
     display: flex;
     justify-content: center;
 }
 
-.save-button button{ 
+.save-button button {
     background-color: purple;
     color: white;
-    margin-top:10px ;
+    margin-top: 10px;
     margin-bottom: 10px;
     padding: 7px;
     padding-inline: 30px;
     border: purple;
     cursor: pointer;
 }
-.save-button{
+
+.save-button {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
 }
 
 
-.loginbutton{
+.loginbutton {
     position: fixed;
     top: 0;
     left: 0;
@@ -116,34 +126,36 @@ input,select{
 
 /* media queries */
 
-@media (max-width:650px){
-    .box{
-    max-width: 50%;
-    margin: auto;
-    margin-top: 5rem;
-    }
-}
-@media (max-width:400px){
-    .box{
-    max-width: 80%;
-    margin: auto;
-    margin-top: 5rem;
-    }
- 
-
-   .text-link label{
-text-align: center;
+@media (max-width:650px) {
+    .box {
+        max-width: 50%;
+        margin: auto;
+        margin-top: 5rem;
     }
 }
 
+@media (max-width:400px) {
+    .box {
+        max-width: 80%;
+        margin: auto;
+        margin-top: 5rem;
+    }
 
-@media (max-width:1000px){
-    .field2 .cont{
+
+    .text-link label {
+        text-align: center;
+    }
+}
+
+
+@media (max-width:1000px) {
+    .field2 .cont {
         width: 100%;
         border: none;
         border-bottom: 1px solid black;
     }
-    .text-link label{
+
+    .text-link label {
         font-size: 12px;
-            }
+    }
 }
